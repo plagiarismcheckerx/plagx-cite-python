@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plagx-cite"
+version = "0.2.1"
+description = "Free APA and MLA citation generator and reference checker: reference lists, in-text citations, BibTeX import/export, DOI to citation and duplicate reference detection. By Plagiarism Checker X."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Plagiarism Checker X" }]
+requires-python = ">=3.9"
+dependencies = []
+keywords = [
+    "citation", "citation-generator", "apa", "apa-citation", "mla", "mla-citation",
+    "bibliography", "works-cited", "reference-list", "in-text-citation",
+    "bibtex", "doi", "csl-json", "academic-writing",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Education",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Text Processing :: Markup :: LaTeX",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/plagiarismcheckerx/plagx-cite-python"
+Source = "https://github.com/plagiarismcheckerx/plagx-cite-python"
+Issues = "https://github.com/plagiarismcheckerx/plagx-cite-python/issues"
+Demo = "https://plagiarismcheckerx.github.io/plagx-cite/"
+Changelog = "https://github.com/plagiarismcheckerx/plagx-cite-python/blob/main/CHANGELOG.md"
+
+[project.scripts]
+plagx-cite = "plagx_cite.cli:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+plagx_cite = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"
