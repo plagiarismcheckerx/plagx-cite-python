@@ -19,7 +19,7 @@ from .check import check_references
 from .doi import extract_dois, from_crossref, is_doi, lookup_doi, normalize_doi
 from .duplicates import find_duplicates
 
-__version__ = "0.2.1"
+__version__ = "0.2.2"
 
 __all__ = [
     "styles", "format_reference", "format_bibliography", "cite_in_text", "sort_references",

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "plagx-cite"
-version = "0.2.1"
+version = "0.2.2"
 description = "Free APA and MLA citation generator and reference checker: reference lists, in-text citations, BibTeX import/export, DOI to citation and duplicate reference detection. By Plagiarism Checker X."
 readme = "README.md"
 license = "MIT"
